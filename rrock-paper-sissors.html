@@ -28,7 +28,24 @@ you won`);
     }
     
     ">rock</button>
-    <button>paper</button>
+    <button 
+    onclick="console.log(Math.random());
+    let ram = Math.random();
+    if(ram <= (1/3)){
+alert(`i choosed rock
+         you won`);
+    }
+    else if(ram <= (2/3) && ram > (1/3)){
+alert(`i choosed paper
+         you tie`);
+    }
+    
+
+        else if(ram <=1 && ram >(2/3)){
+alert(`i choosed scissors
+you lost`);
+    }
+    >paper</button>
     <button>scissors</button>
 </body>
 
