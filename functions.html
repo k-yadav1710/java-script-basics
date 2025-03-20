@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /*
+        function converttofahrenheit(celsus){
+    console.log((celsus*(9/5))+32);
+        }
+            
+            converttofahrenheit(32);
+    */
+
+    function converttemperature(degrees, unit){
+      if (unit === 'F'){
+        console.log((degrees - 32) * 5 / 9) ;
+      }
+      else  {
+    console.log((degrees * 9 / 5) + 32);
+
+    }
+}
+
+    converttemperature(23 ,'F');
+    converttemperature(23 , 'C');
+    </script>
+</body>
+
+</html>
