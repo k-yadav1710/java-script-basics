@@ -14,9 +14,14 @@ onclick="console.log(`cart quantity = ` + cartquantity);"
  <button 
  
  onclick="
- cartquantity =  cartquantity + 1;
+ if ( cartquantity <=9)
+ {cartquantity =  cartquantity + 1;
  console.log( 'cart quantity = ' + cartquantity
- );"
+ );} 
+ else{
+    warning();
+ }
+ "
  >Add to Cart
 
  </button>
@@ -39,14 +44,24 @@ console.log( 'cart quantity = ' + cartquantity
 
  <button
  onclick="
- cartquantity = 0; 
+ if (cartquantity >=1)
+ {cartquantity = 0; 
  console.log( 'cart quantity = ' + cartquantity
-  )
+  )}
+  else{
+warning1();
+  }
   "
  >Reset Cart</button>
 
    <script>
   let cartquantity = 0;
+  function warning(){
+    alert("too much");
+  }  
+  function warning1(){
+    alert("add something");
+  }  
    </script>
 </body>
 </html>
